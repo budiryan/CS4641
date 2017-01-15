@@ -1,0 +1,12 @@
+learningRate = 2
+regularization = 0
+epsilon = 0.12
+
+epoch = 1500
+acc = 0.9836
+
+epoch = 1000
+acc = 0.975
+
+epoch = 500
+acc = 0.9542
