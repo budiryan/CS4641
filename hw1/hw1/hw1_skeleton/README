@@ -24,10 +24,10 @@
 #######################################################################################
 
 # Personal information
-FIRSTNAME: Byron
-LASTNAME:  Boots
-GTACCOUNT: bboots3
-GTID:      123456789
+FIRSTNAME: Budi
+LASTNAME:  Ryan
+GTACCOUNT: bryan30
+GTID:      903266310
 
 # List all sources of help that you consulted while completing this assignment 
 # (other students, colleagues, textbooks, websites, etc.).  This includes anyone you 
@@ -39,8 +39,8 @@ GTID:      123456789
 
 SOURCESCONSULTED: |
     While completing the assignment, I consulted the following sources: 
-    Chapter 2 of Pattern Recognition and Machine Learning by C. Bishop
-    Chapter 5 of Machine Learning, A Probabilistic Perspective by K. Murphy
+    Python advanced array slicing : https://docs.python.org/2.3/whatsnew/section-slices.html
+    Andrew Ng's Machine Learning Course on Coursera 
 
 
 
@@ -52,16 +52,16 @@ SOURCESCONSULTED: |
 #######################################################################################
 
 # Problem 1a: information gain for the outlook attribute  (only your final answer)
-DT_INFO_GAIN_OUTLOOK: 123.45
+DT_INFO_GAIN_OUTLOOK: 0.246
 
 # Problem 1a: information gain for the humidity attribute  (only your final answer)
-DT_INFO_GAIN_HUMIDITY: 123.45
+DT_INFO_GAIN_HUMIDITY: 0.04505
 
 # Problem 1b: gain ratio for the outlook attribute  (only your final answer)
-DT_GAIN_RATIO_OUTLOOK: 123.45
+DT_GAIN_RATIO_OUTLOOK: 0.156
 
 # Problem 1b: gain ratio for the humidity attribute  (only your final answer)
-DT_GAIN_RATIO_HUMIDITY: 123.45
+DT_GAIN_RATIO_HUMIDITY: 0.048
 
  
  
@@ -73,22 +73,22 @@ DT_GAIN_RATIO_HUMIDITY: 123.45
 #######################################################################################
 
 # What was the mean of the unpruned decision tree's accuracies?  (only your final answer)
-SHOWDOWN_DT_TEST_ACCURACY_MEAN: 123.45
+SHOWDOWN_DT_TEST_ACCURACY_MEAN: 0.732653846154
 
 # What was the standard deviation of the unpruned decision tree's accuracies?  (only your final answer)
-SHOWDOWN_DT_TEST_ACCURACY_STDDEV: 123.45
+SHOWDOWN_DT_TEST_ACCURACY_STDDEV: 0.0709883626599
 
 # What was the mean of the decision stump's accuracies?  (only your final answer)
-SHOWDOWN_DSTUMP_TEST_ACCURACY_MEAN: 123.45
+SHOWDOWN_DSTUMP_TEST_ACCURACY_MEAN: 0.792307692308
 
 # What was the standard deviation of the decision stump's accuracies?  (only your final answer)
-SHOWDOWN_DSTUMP_TEST_ACCURACY_STDDEV: 123.45
+SHOWDOWN_DSTUMP_TEST_ACCURACY_STDDEV: 0.099108451744
 
 # What was the mean of the 3-level decision tree's accuracies?  (only your final answer)
-SHOWDOWN_DT3_TEST_ACCURACY_MEAN: 123.45
+SHOWDOWN_DT3_TEST_ACCURACY_MEAN: 0.753461538462
 
 # What was the standard deviation of the 3-level decision tree's accuracies?  (only your final answer)
-SHOWDOWN_DT3_TEST_ACCURACY_STDDEV: 123.45
+SHOWDOWN_DT3_TEST_ACCURACY_STDDEV: 0.0627041046003
 
 
 
@@ -100,7 +100,7 @@ SHOWDOWN_DT3_TEST_ACCURACY_STDDEV: 123.45
 # Copy and paste your one-line matrix equation for computing the closed form solution
 # to linear regression (e.g., Line 171 of test_linreg_univariate.py or Line 51 of 
 # test_linreg_multivariate.py)
-LINREGIMPLEMENTATION_CLOSEDFORM: thetaClosedForm = 0
+LINREGIMPLEMENTATION_CLOSEDFORM: thetaClosedForm = np.linalg.pinv(X.transpose() * X) * X.transpose() * y
  
  
  
@@ -112,7 +112,7 @@ LINREGIMPLEMENTATION_CLOSEDFORM: thetaClosedForm = 0
 #######################################################################################
 
 # Approximately how many hours did it take you to complete this assignment?
-FEEDBACK_NUM_HOURS: 0
+FEEDBACK_NUM_HOURS: 8
 
 # Please list any typos / errors you noticed in the assignment description or skeleton code
 FEEDBACK_ERRORS: |

@@ -35,9 +35,9 @@ class LinearRegression:
             self.JHist.append( (self.computeCost(X, y, theta), theta) )
             print "Iteration: ", i+1, " Cost: ", self.JHist[i][0], " Theta: ", theta
             # TODO:  add update equation here
-
+            theta = theta - (X.transpose() * (X * theta - y)) * (self.alpha / n);
         return theta
-    
+
 
     def computeCost(self, X, y, theta):
         '''
@@ -51,7 +51,10 @@ class LinearRegression:
               ** make certain you don't return a matrix with just one value! **
         '''
         # TODO: add objective (cost) equation here
-    
+        n, d = X.shape
+        total_cost = (((X * theta - y).transpose()) * ((X * theta) - y)) / (2 * n)
+        total_cost = total_cost.flat[0]
+        return total_cost
 
     def fit(self, X, y):
         '''
@@ -76,3 +79,4 @@ class LinearRegression:
             an n-dimensional numpy vector of the predictions
         '''
         # TODO:  add prediction function here
+        return X * self.theta
